@@ -1,0 +1,72 @@
+<!-- 轮播图 -->
+<view class="banner">
+  <swiper class="banner_1" autoplay="true" circular="true" interval="4000" indicator-dots="true">
+    <swiper-item  wx:for="{{message.imgs}}"wx:key="navItems">
+      <image mode="aspectFit"class="bannimg" src="{{item}}"></image>
+    </swiper-item >
+  </swiper>
+</view>
+<view class="box">
+  <image class="usersimg"src="{{message.user.avatarUrl}}"data-id="{{message._openid}}"></image>
+  <view class="usersname">{{message.user.nickName}}</view>
+  <view class='tit2'>{{sendDate}}</view>
+</view>
+<view class="countbox">
+  <view class="count">游览量:{{zfcount}}</view>
+  <view class="count">点赞量:{{dzcount}}</view>
+  <view class="count">收藏量:{{sccount}}</view>
+  <view class="count">评论量:{{plcount}}</view>
+</view>
+<view class="mess">{{message.mess}}</view>
+
+
+
+
+
+
+<view id="comment"class="setCom">
+<view class="pl">在线留言</view>
+<view class="userpl"data-id="{{index}}" wx:for="{{messObj}}"wx:key="navItems">
+  <view class="userplMess">
+    <image class="userimg"src="{{item.userInfo.avatarUrl}}"></image>
+    <view class="userbox">
+      <view class="username">{{item.userInfo.nickName}}</view>
+      <view class="userdata">{{item.AssessDate}}</view>
+      <view class="usertalk">{{item.info}}</view>
+      <view wx:if="{{item._openid==openid}}" class="shanchu"bindtap="shanchu"data-item="{{item}}">删除</view>
+    </view>
+  </view>
+</view>
+</view>
+<view class="downbox">
+  <view class="input"bindtap="clickZz">
+    <image src="../../images/bi.png"class="imgbi"></image>
+    <view class="plsox">写评论...</view>
+  </view>
+  <view class="dianzan"bindtap="clickSc">
+    <image wx:if="{{Scswh}}" src="../../images/shoucang2.png"class="tbimg"></image>
+    <image wx:else src="../../images/shoucang0.png"class="dzimg"></image>
+	<text class="atxt">收藏</text>
+  </view>
+  <view class="dianzan"bindtap="clickDz">
+    <image wx:if="{{Dzswh}}" src="../../images/dianzan2.png"class="tbimg"></image>
+    <image wx:else src="../../images/dianzan0.png"class="dzimg"></image>
+	<text class="atxt">点赞</text>
+  </view>
+  <view class="zhuanfa">
+    <image src="../../images/zhuanfa.png"class="tbimg"></image>
+  </view>
+  <button class="btnZf"open-type="share"></button>
+</view>
+<!-- 评论模块 -->
+<!-- 评论模块 -->
+<view class="write"wx:if="{{write}}">
+<form bindsubmit="btnSub">
+<textarea value="{{info}}"auto-focus="{{true}}"show-confirm-bar="{{false}}"auto-focus="{{true}}"disable-default-padding="{{false}}"
+class="nmess"name="info"adjust-position="{{true}}"cursor-spacing="{{120}}"placeholder="友善发言,温暖评论区"tyle="OVERFLOW:hidden"></textarea>
+<view class="btns">
+  <button class="btt" size="mini"bindtap="resert"form-type="submit">发表</button>
+  <button class="btt1" size="mini"bindtap="clickClose">取消</button>
+</view>
+</form>
+</view>

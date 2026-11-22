@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/geren/geren",
+    "pages/guanyu/guanyu",
+    "pages/introduce/introduce",
+    "pages/fenlei/fenlei",
+    "pages/send/send",
+    "pages/send2/send2",
+    "pages/mysend/mysend",
+    "pages/myxinde/myxinde",
+    "pages/fenxiang/fenxiang",
+    "pages/text/text"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "智能废品回收系统",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#929292",
+    "selectedColor": "#508bde",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"/images/shouye0.png",
+        "selectedIconPath":"/images/shouye1.png"
+      },
+      {
+        "pagePath": "pages/fenlei/fenlei",
+        "text": "心得",
+        "iconPath":"/images/shixiu0.png",
+        "selectedIconPath":"/images/shixiu1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath":"/images/my0.png",
+        "selectedIconPath":"/images/my1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents"
+}

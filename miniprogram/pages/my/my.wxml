@@ -1,0 +1,45 @@
+<!--用户头像昵称-->
+<view class="aa"wx:if="{{SWOW}}">
+    <image class="cc"bindtap="user" src="{{userInfo.avatarUrl}}"></image>
+        <view class="ac">{{userInfo.nickName}}</view>
+        <view class="ac">积分:{{jifen}}</view>
+</view>
+<view class="aa" wx:else>
+      <button class="btnLogin"bindtap="getUserProfile">授权登录</button>
+</view>
+
+<view class="megs">
+      <view class="fuji"bindtap="user">
+      <image class="userimg" src="../../images/user.png"></image>
+      <view class="nameabcs">个人信息</view>
+      <image class="zuoimg" src="../../images/right.png" />
+</view>
+      <view class="fuji"bindtap="myorder">
+      <image class="userimg" src="../../images/order.png"></image>
+      <view class="nameabcs">回收记录</view>
+      <image class="zuoimg" src="../../images/right.png" />
+</view>
+<view class="fuji"bindtap="myxinde">
+      <image class="userimg" src="../../images/shixiu1.png"></image>
+      <view class="nameabcs">我的心得</view>
+      <image class="zuoimg" src="../../images/right.png" />
+</view>
+	<view class="fuji">
+      <image class="userimg" src="../../images/kefu.png"></image>
+      <view class="nameabcs">客服中心</view>
+      <image class="zuoimg" src="../../images/right.png" />
+      <button class="kefu" open-type="contact"></button>
+</view>
+<!-- <view class="fuji">
+      <image class="userimg" src="../../images/fankui.png"></image>
+      <view class="nameabcs">意见反馈</view>
+      <image class="zuoimg" src="../../images/right.png" />
+	  <button class="kefu" open-type='feedback'></button>
+</view> -->
+<view class="fuji"bindtap="guanyu">
+      <image class="userimg" src="../../images/guanyu.png"></image>
+      <view class="nameabcs">关于我们</view>
+      <image class="zuoimg" src="../../images/right.png" />
+</view>
+
+</view>

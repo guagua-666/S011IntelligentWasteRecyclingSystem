@@ -1,0 +1,57 @@
+<form bindsubmit="submit" class="aa">
+<image class="imga" src="{{avatarUrl}}"></image> 
+
+<view class="box1">
+	<view class="t1">
+		头像
+	</view>
+
+		<button class="wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+</button>
+	<image src="../../images/right.png" mode="aspectFill"class="imgs" />
+</view>
+
+
+
+<view class="box">
+	<view class="t1">
+		姓名
+	</view>
+	<input class="t2" value="{{name}}"name="name"></input>
+	<image src="../../images/right.png" mode="aspectFill"class="imgs" />
+</view>
+<view class="box">
+	<view class="t1">
+		性别
+	</view>
+    <picker class="t2" bindchange="changeSex" range="{{sexbox}}" value="{{sex}}">
+    <text>{{sex}}</text>
+  </picker>
+	<image src="../../images/right.png" mode="aspectFill"class="imgs" />
+</view>
+<view class="box">
+	<view class="t1">
+		出生日期
+	</view>
+    <picker class="t2" bindchange="changeTime" mode = "date" value="{{time}}">
+    <text>{{time}}</text>
+  </picker>
+	<image src="../../images/right.png" mode="aspectFill"class="imgs" />
+</view>
+<view class="box">
+	<view class="t1">
+		手机号
+	</view>
+	<input class="t2" value="{{phone}}"name="phone"></input>
+	<image src="../../images/right.png" mode="aspectFill"class="imgs" />
+</view>
+<view class="box">
+	<view class="t1">
+		邮箱
+	</view>
+	<input class="t2" value="{{cid}}"name="cid"></input>
+	<image src="../../images/right.png" mode="aspectFill"class="imgs" />
+</view>
+
+<button class="btnLogin" form-type="submit">保存</button>
+</form>

@@ -1,0 +1,19 @@
+<!-- 搜索 -->
+<view class="aax">
+	<view class="search">
+		<input class="sousuo" placeholder="请输入要搜索的内容" bindconfirm="search" bindinput="emailInput" value="{{value}}" confirm-type="done"></input>
+		<image src="/images/sousuo.png" style="width:60rpx;height:55rpx;margin:auto;"></image>
+	</view>
+</view>
+
+	<view wx:if="{{dataObj.length}}" class='content'>
+      <view class='img-div1' bindtap='introduce'data-id="{{index}}"data-url="{{item}}" data-item="{{item}}" wx:key="id"wx:for-index="index"wx:for="{{dataObj}}">
+        <image class="cookimg" mode="aspectFill" src="{{item.imgs[0]}}"></image>
+
+        <view class="mess1">{{item.name}}</view>
+
+      </view>
+</view>
+<view wx:else class="content" >
+	<image src="../../images/zanwu.png"class="zanwu" mode="aspectFill"/>
+</view>

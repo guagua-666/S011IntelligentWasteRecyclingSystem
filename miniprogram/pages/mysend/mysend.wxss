@@ -1,0 +1,72 @@
+.meg{
+	position: relative;
+	width: 90%;
+	margin:10rpx auto;
+	background-color: white;
+	padding: 20rpx 0 30rpx;
+	box-shadow: 12rpx 10rpx 25rpx grey;
+	border-radius: 25rpx;
+}
+.title{
+	width: 90%;
+	margin:10rpx auto;
+	font-weight: bold;
+	font-size: 37rpx;
+}
+.mess{
+	color: #949494;
+	display: block;
+	/* background-color: salmon; */
+	font-size: 30rpx;
+	width: 90%;
+	margin: auto;
+
+	}
+	.tit2{
+		color: rgb(100, 100, 100);
+		font-size: 25rpx;
+		width: 90%;
+		position: absolute;
+		top: 10rpx;
+		text-align: left;
+		left: 40rpx;
+		z-index: 5;
+	}
+	.tit1{
+		color: rgb(255, 255, 255);
+		font-size: 25rpx;
+		width: 80rpx;
+		position: absolute;
+		top: 10rpx;
+		border-radius: 10rpx;
+		text-align: center;
+		right: 30rpx;
+		z-index: 5;
+		height: 40rpx;
+line-height: 40rpx;
+		background-color: rgb(228, 40, 40);
+	}
+.simgs{
+	width: 90%;
+	margin: auto 20rpx;
+	/* height: 180rpx; */
+	border-radius: 15rpx;
+	display: block;
+	margin: auto;
+}
+.leftss{
+	width: 60%;
+	margin: auto 0;
+}
+.ms{
+	border: 4rpx solid rgb(31, 151, 207);
+	width: 80rpx;
+	height: 80rpx;
+	padding: 20rpx;
+	border-radius: 100rpx;
+	z-index: 999;
+	position: fixed;
+	right: 20rpx;
+	bottom: 10%;
+	background-color: rgba(107, 107, 107, 0.411);
+}

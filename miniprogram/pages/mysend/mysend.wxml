@@ -1,0 +1,22 @@
+<view class="meg" data-id="{{index}}"data-url="{{item}}"  wx:key="id"wx:for-index="index"wx:for="{{dataObj}}">
+
+<view class="mess">
+    物品名称：{{item.name}} 
+</view>
+<view class="mess">
+    回收站点：{{item.dateweek}} 
+</view>
+<view class="mess">
+    回收类型：{{item.type}} 
+</view>
+<view class="mess">
+    回收数量：{{item.num}} 
+</view>
+<view class="mess">
+    交付时间：{{item.time}} 
+</view>
+<view class='tit1'data-item="{{item}}"bindtap="delList">删除</view>
+
+
+</view>
+

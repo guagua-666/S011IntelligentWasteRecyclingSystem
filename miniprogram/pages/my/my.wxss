@@ -1,0 +1,355 @@
+
+  .dingbu{
+	position: absolute;
+	top: 5%;
+	width: 100%;
+	text-align: center;
+	font-size: 28rpx;
+	color: white;
+  
+	/* border-bottom:1rpx solid white; */
+  }
+  /* 信息框样式 */
+  .meg{
+	/* width: 85%; */
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin:10rpx auto;
+	/* background: linear-gradient(0deg,rgb(84, 34, 141),rgb(17, 121, 190)); */
+	background-color:rgb(255, 255, 255);
+	border-radius:25rpx ;
+	/* height: 350rpx; */
+  }
+  .mestop{
+	margin:30rpx auto;
+	width: 90%;
+	border-bottom: 1rpx solid rgb(211, 211, 211);
+	line-height: 90rpx;
+  }
+  .messbox{
+	margin:10rpx auto;
+	width: 100%;
+	height: 200rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/* background-color: sienna; */
+	/* padding: 0 10rpx 0 10rpx; */
+  }
+  .model{
+	margin: auto;
+	height: 80%;
+	width: 16%;
+	/* background-color: skyblue; */
+  }
+  .modelimg{
+	display: block;
+	margin: auto;
+	/* background-color: slateblue; */
+	width: 70rpx;
+	height: 65rpx;
+  }
+  .modeltext{
+	line-height: 70rpx;
+	font-weight: 400;
+	text-align: center;
+	font-size: 28rpx;
+  }
+  .ggbox{
+	width: 100%;
+	margin-bottom: 20rpx;
+  
+  }
+  .cc{
+	width: 180rpx;
+	height: 180rpx;
+	border-radius: 80%;
+	margin:20rpx auto ;
+	display: block;
+  }
+  .aq{
+	display: flex;
+	flex-direction: row;
+	font-size: 21px;
+	font-weight: 400;
+	width: 100%;
+	height: 60rpx;
+	background-color: #fff;
+	margin-top: 10rpx;
+	padding-top: 15rpx;
+	padding-bottom: 15rpx;
+	padding-left: 20rpx;
+  }
+  .bgimg{
+	position: absolute;
+	height: 300rpx;
+	width: 100%;
+	z-index: 1;
+  }
+  .aa{
+	  /* background-color: black; */
+	width: 60%;
+	z-index: 5;
+	height: 300rpx;
+	align-items: center;
+	color: rgb(0, 0, 0);
+	margin:  auto ;
+	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  }
+  .ac{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30rpx;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	color: rgb(0, 0, 0);
+	/* background-color: black; */
+  }
+  .fenshu{
+	font-size: 40rpx;
+  }
+  .fenshus{
+	border: 5rpx solid rgb(66, 66, 66);
+	border-radius: 15rpx;
+	margin: auto 5rpx;
+	padding: 0 10rpx;
+  }
+  .kefu{
+	position: absolute;
+	/* background-color: black; */
+	height: 100rpx;
+	width: 90% !important;
+  }
+  .fenshuss{
+	color: rgb(211, 28, 28);
+	font-size: 35rpx;
+	line-height: 70rpx;
+  }
+  .usermess{
+	width: 40%;
+	/* background-color: black; */
+  }
+  .tishi{
+	margin-left: 10%;
+  }
+  .kongge{
+	width: 25rpx;
+  }
+  .mess{
+	font-size: 30rpx;
+	font-weight: bold;
+	margin: auto 10%;
+  }
+  .vipbox{
+	display: flex;
+	height: 70rpx;
+  }
+  .vipbox1{
+	line-height: 50rpx;
+	display: flex;
+	height: 50rpx;
+  }
+  .shenfen{
+	line-height:70rpx;
+  }
+  .vip{
+	border-radius: 25rpx;
+	width: 70rpx;
+	height: 70rpx;
+	margin: auto 20rpx;
+	display: block;
+  }
+  .qbbox{
+	display: flex;
+	height: 60rpx;
+  }
+  .qianbaotxt{
+	font-size: 30rpx;
+	color: #ffffff;
+	line-height: 60rpx;
+	margin-left: 5rpx;
+	font-weight: bold;
+  }
+  .monettxt{
+	font-size: 38rpx;
+	color: white;
+	font-weight: bold;
+  }
+  .qb{
+	/* background-color: blanchedalmond; */
+	margin-left: 50rpx;
+	margin-top: 10rpx;
+  }
+  .contain{
+	width: 100%;
+	padding:0rpx 46rpx;
+	box-sizing: border-box;
+  }
+  .btn{
+	margin: 50rpx;
+	border: 1rpx solid black;
+  }
+  .bb{
+	height: 120rpx;
+	width: 300rpx;
+  }
+  .bbimg{
+	position: absolute;
+	right: 80rpx;
+	top: 75rpx;
+	width: 80rpx;
+	height: 72rpx;
+  }
+  .bbtxt{
+	font-weight: 900;
+	font-size:30rpx ;
+	right: 47rpx;
+	position: absolute;
+	top: 150rpx;
+  }
+  .bbimg0{
+	position: absolute;
+	right: 80rpx;
+	top: 75rpx;
+	width: 80rpx;
+	height: 72rpx;
+  }
+  .bbtxt0{
+	font-weight: 900;
+	font-size:30rpx ;
+	right: 47rpx;
+	position: absolute;
+	top: 150rpx;
+	color: #d4d1d1;
+  }
+  /* ss */
+  .slide-image{
+	width: 100%;
+	height: 310rpx;
+	border-radius: 20rpx;
+  }
+  .card{
+	margin-top: 20rpx;
+	border-radius: 25rpx;
+	width: 100%;
+	height: 122rpx;
+	box-sizing: border-box;
+	/* box-shadow: 0 0 20rpx #eee; */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+	position: relative;
+	border: 4rpx solid white;
+	background-color: white;
+  }
+  .card button{
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	  left: 0rpx;
+	  top: 0rpx;
+	  opacity: 0.01;
+  }
+  .card1{
+	width: 140rpx;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .wechatimg{
+	width: 90rpx;
+	height:90rpx;
+  }
+  .borderbox{
+	width: 10rpx;
+	height: 100%;
+	display: flex;
+	align-items: center;
+  }
+  
+  .border{
+	width: 4rpx;
+	height: 82rpx;
+	border-left: 3rpx solid #eee;
+	box-sizing: border-box;
+  }
+  
+  .centercontain{
+	width: 420rpx;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	 padding-left: 20rpx;
+  }
+  .name{
+	font-size: 32rpx;
+	font-weight: 600;
+	letter-spacing: 2rpx;
+  }
+  .des{
+	padding-top: 10rpx;
+	font-size: 28rpx;
+	color: rgb(161, 161, 161);
+	 letter-spacing: 2rpx;
+  }
+  .rightico{
+	width: 40rpx;
+	height: 100%;
+	 display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .rightimg{
+	width: 30rpx;
+	height: 30rpx;
+  }
+  .btnLogin{
+	border: 3px solid rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
+	border-radius: 15rpx;
+	margin:30% auto;
+  }
+  .megs{
+    margin: 50rpx auto;
+    width: 90%;
+    background-color: white;
+    border-radius: 25rpx;
+  }
+  .fuji{
+    width: 100%;
+    border-bottom: 1rpx solid rgba(112, 112, 112,0.2);
+    height: 100rpx;
+    display: flex;
+  }
+  .userimg{
+    width: 60rpx;
+    height: 60rpx;
+    margin: auto 20rpx;
+    display: block;
+  }
+  .nameabcs{
+    line-height: 100rpx;
+    font-size: 28rpx !important;
+    color: #818181;
+    width: 60%;
+  }
+  .shoutext{
+    line-height: 100rpx;
+    font-size: 28rpx;
+    color: #818181;
+    margin: auto;
+  }
+  .huiyuan{
+    margin: auto;
+    display: block;
+    width: 55rpx;
+    height: 55rpx;
+  }
+  .zuoimg{
+    margin: auto;
+    width: 30rpx;
+    height: 30rpx;
+  }

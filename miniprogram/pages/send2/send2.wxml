@@ -1,0 +1,52 @@
+<form class="box" bindsubmit="btnSub">
+
+<view class="qianbiao">物品照片</view>
+<view wx:if="{{jzimg==0}}"class="tpboximg">
+<image src="../../images/shangchuan.png"bindtap="chooseImage"class="imgs"></image>
+</view>
+<view wx:if="{{jzimg==1}}"class="tpboximgs">
+<view class="qubox">
+  <image src="../../images/quxiao.png"mode="aspectFill"class="smallimgs"bindtap="quxiao"></image>
+
+</view>
+<image src="{{temp_imgs}}"mode="aspectFill" class="imgs"></image>
+</view>
+<view class="ptboxms">
+<view class="qianbiao">物品名称</view>
+<input class="jibenkuang"value="{{name}}" name="name" placeholder="请输入名称" type="text"/>
+</view>
+
+<view class="ptboxms">
+<view class="qianbiao">站点选择</view>
+<view class="jibenkuang">
+  {{dateweek}}
+</view>
+
+</view>
+
+<view class="ptboxms">
+<view class="qianbiao">废品类型</view>
+<input class="jibenkuang"value="{{type}}" name="type" placeholder="请输入废品类型" type="text"/>
+</view>
+<view class="ptboxms">
+<view class="qianbiao">数量</view>
+<input class="jibenkuang"value="{{num}}" name="num" placeholder="请输入数量" type="number"/>
+</view>
+<view class="ptboxms">
+	<view class="qianbiao">交付时间</view>
+    <picker class="jibenkuang"bindchange="bindPickerTime" mode="date">
+    <view >
+      {{time}}
+    </view>
+  </picker>
+  </view>
+<view class="ptboxmss">
+<view class="qianbiao">物品介绍</view>
+<textarea  maxlength="{{500}}"placeholder="请输入回收介绍" value="{{mess}}"show-confirm-bar="{{false}}"disable-default-padding="{{false}}"class="miaoshu"name="mess"adjust-position="{{true}}"cursor-spacing="{{120}}"placeholder-class="phcolor"tyle="OVERFLOW:hidden"></textarea>
+</view>
+
+
+<view class="btns">
+<button class="btt"form-type="submit">确认</button>
+</view>
+</form>

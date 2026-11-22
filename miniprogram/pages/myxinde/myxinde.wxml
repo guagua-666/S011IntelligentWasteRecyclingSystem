@@ -1,0 +1,13 @@
+<view class="meg" data-id="{{index}}"data-url="{{item}}" data-item="{{item}}"bindtap="introduce" wx:key="id"wx:for-index="index"wx:for="{{dataObj}}">
+	<image src="{{item.imgs[0]}}" mode="aspectFill"class="simgs" />
+	<view class="leftss">
+	<view class="title">
+		{{item.name}}
+	</view>
+	<view class="mess">
+		{{item.mess}} 
+	</view>
+	<view class='tit2'data-item="{{item}}" catch:tap="del">删除</view>
+	</view>
+
+	</view>

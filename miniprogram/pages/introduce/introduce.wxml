@@ -1,0 +1,30 @@
+<view class="ptboxms3">
+    <image class="img" src="{{message.img}}" mode=""/>
+    <view class="jibenkuang2">{{message.name}}</view>
+  </view>
+
+
+  <view class="ptboxms">
+  <view class="pbox">
+    <view class="pt1">回收类型</view>
+  </view>
+  <view class="jibenkuang">{{message.type}}</view>
+  </view>
+  <view class="ptboxms">
+  <view class="pbox">
+    <view class="pt1">地理位置</view>
+  </view>
+  <view class="jibenkuang">{{message.area}}</view>
+  </view>
+  <view class="ptboxms">
+  <view class="pbox">
+    <view class="pt2" bind:tap="area">一键导航</view>
+  </view>
+  <view class="jibenkuang"></view>
+  </view>
+
+  <view class="miaoshu">{{message.mess}}</view>
+
+
+
+  <view class="btn" bind:tap="btn">废品回收</view>
